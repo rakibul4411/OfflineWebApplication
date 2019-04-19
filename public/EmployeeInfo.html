@@ -1,0 +1,150 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="cssFile/playerDB.css" rel="stylesheet" />
+    <link href="cssFile/bootstrap.min.css" rel="stylesheet" />
+    <link href="cssFile/font-awesome.min.css" rel="stylesheet" />
+    <!--<script>
+        function readURL(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+
+                reader.onload = function (e) {
+                    $('#uImage')
+                        .attr('src', e.target.result)
+                        .width(200)
+                        .height(200);
+                };
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+    </script>-->
+</head>
+<body>
+    <header>
+        <div class="pHeader">
+            <h1 class="pHeading">MRS Software Solution Ltd.</h1>
+        </div>
+        <div class="banner">
+            <img src="Resource/images/empbanner.PNG" alt="Banner Image" />
+        </div>
+    </header>
+    <section>
+        <div class="mainContent">
+            <div class="lSide"></div>
+            <div class="mSide">
+                <div class="fheader">
+                    <h1 class="fHeading">Employee Infromation Form</h1>
+                    <h4 style="margin:0;padding:0;text-align:center;"> <span style='color: red;'></span></h4>                    <hr />
+                </div>
+                <div class="formContent">
+                    <form id="foContent" method="get">
+                        <div class="foDiv1">
+                            <h2><u>Personal Information</u></h2>
+                            <!--Name & id Unit-->
+                            <label for="id">Player ID<span>*</span></label><br />
+                            <input id="id" type="text" name="id" required /><br />
+                            <label for="name">Name<span>*</span></label><br />
+                            <input id="name" type="text" name="name" required /><br />
+                            <!--Vartual contact unit-->
+                            <label for="phone">Cell Phone<span>*</span></label><br />
+                            <input id="phone" type="tel" name="phone" required /><br />
+                            <label for="email">Email Address<span>*</span></label><br />
+                            <input id="email" type="email" name="email" required /><br />
+                            <!--confidential info unit-->
+                            <label for="nid">NID NO<span>*</span></label><br />
+                            <input id="nid" type="number" name="nid" required /><br />
+                            <!--Marital Status Info-->
+                            <label for="maritalStatus">Marital Status<span>*</span></label><br />
+                            <select id="maritalStatus" required>
+                                <option>--Select Marital Status--</option>
+                                <option>married</option>
+                                <option>Unmarried</option>
+                                <option>Devoice</option>
+                                <option>widow</option>
+                                <option>Others</option>
+                            </select><br /><br />
+                            <!--Address Unit-->
+                            <label for="Address">Parmanent Address<span>*</span></label><br />
+                            <textarea id="Address" type="text" name="ParmanentAddress" required></textarea><br />
+                        </div>
+                        <div class="foDiv2" style="border-left: 10px inset gray">
+                            <h2><u>Basic Job Information</u></h2>
+                            <!--Playing Postion-->
+                            <label>Position<span>*</span></label><br />
+                            <select id="jobtitle" required>
+                                <option>--Select Your Position--</option>
+                                <option>GM</option>
+                                <option>AGM</option>
+                                <option>TM</option>
+								<option>Asst. HR</option>
+								<option>HR</option>
+                                <option>Jr. Developer (Java)</option>
+                                <option>Asst. Developer(Java)</option>
+                                <option>Developer(Java)</option>
+                                <option>Sr. Developer(Java)</option>
+								<option>Jr. Developer (C#.NET)</option>
+                                <option>Asst. Developer(C#.NET)</option>
+                                <option>Developer(C#.NET)</option>
+                                <option>Sr. Developer(C#.NET)</option>							
+                            </select><br /><br />
+                            <!--Total Goal unit-->
+                            <label for="salary">Salary<span>*</span></label><br />
+                            <input id="salary" type="number" name="salary" required /><br />
+                            <!--join Date info unit-->
+                            <label for="joinDate">Join Date<span>*</span></label><br />
+                            <input id="joinDate" type="date" name="joinDate" required /><br />
+                            <!--Image upload unit-->
+                            <div id="uploadImage">
+                                <img id="uImage" src="Resource/images/placeholder.png" alt="Image 300X300px" />
+                            </div>
+                            <input type='file' accept="image/x-png,image/gif,image/jpeg" id="upImage" />
+                        </div>
+                        <div style="width: 100%; float:left; text-align:center;">
+                            <button class="btn btn-primary" type="button" id="btnSubmit">Submit</button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+            <!--<div class="rSide"></div>-->
+        </div>
+    </section>
+    <section id="gridView" class="container-fluid">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <table id="InfoTable" class="table table-responsive table-bordered">
+                    <tr>
+                        <th>Photo</th>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Contact No</th>
+                        <th>Email</th>
+                        <th>NID NO</th>
+                        <th>M. Status</th>
+                        <th>Address</th>
+                        <th>Postion</th>
+                        <th>Salary</th>
+                        <th>Join Date</th>
+                        <th>Edit</th>
+                        <th>Delete</th>
+                    </tr>
+                </table>
+                <button id="clearBtn" class="btn btn-danger">All Clear</button>
+            </div>
+        </div>
+    </section>
+    <footer>
+        &nbsp;
+        <p class="footerText">&copy;2018,All Rights Reserved by MRS Software Solution Ltd.</p>
+    </footer>
+
+
+
+    <script src="Scripts/jquery-2.2.4.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script src="Scripts/database.js"></script>
+</body>
+</html>

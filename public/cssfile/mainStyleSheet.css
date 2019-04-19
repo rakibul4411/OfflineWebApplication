@@ -1,0 +1,35 @@
+﻿body {
+    background: url('../Resource/images/EmployeeBackImg.jpg') no-repeat;
+    opacity: 1;
+    font-family: 'Bell MT';
+}
+nav{
+    text-align: right;
+}
+nav>a>img{
+    height:100px;
+}
+#login {
+    height: auto;
+    width: 400px;
+    margin: auto;
+    margin-top: auto;
+    background: grey;
+    margin-top: 322px;
+    display: none;
+}
+form>fieldset>legend{font-size:30px;}
+form > fieldset > label {
+    font-size: 23px;
+}
+form > fieldset > input {
+    font-size: 18px;
+    width: 90%;
+    height: 30PX;
+}
+#btnLogIn {
+    margin: 25px 37%;
+    font-size: 25px;
+    background-color: grey;
+    border-radius: 10px 0px;
+}

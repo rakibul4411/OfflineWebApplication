@@ -1,0 +1,166 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+    font-family:'Bell MT';
+    background-color:gray;
+    color:black!important;
+    
+}
+.banner {
+    /*background: url('../Resource/images/banner.jpg') no-repeat center center;*/
+    height: 200px;
+    width: 100%;
+    position: relative;
+}
+.banner>img{
+    height:100%;
+    width:100%;
+}
+hr{
+    height: 30px;
+    width: 100%;
+    background-color: gray;
+    margin:0;
+}
+span{
+    color: red;
+}
+h1, h2, h3 {
+    font-family: 'Book Antiqua' !important;
+    text-align: center;
+    margin: 0 !important;
+    padding: 0 !important;
+    background-color: #b7a69d;
+}
+.mainContent {
+    margin: 0;
+    padding: 0;
+    height: 600px;
+    width: 100%;
+    background-color: gray;
+}
+.lSide {
+    margin: 0;
+    padding: 0;
+    height: 640px;
+    width: 19.87%;
+    background-color: grey;
+    float: left;
+}
+.mSide {
+    margin: 0;
+    padding: 0;
+    height: auto;
+    width: 80%;
+    float: left;
+}
+.rSide {
+    margin: 0;
+    padding: 0;
+    height: 660px;
+    width: 5%;
+    background-color: indianred;
+    float: left;
+}
+.mSide .fheader {
+    margin: 0;
+    padding: 0;
+    height: auto;
+    width: 100%;
+    background-color: grey;
+    float: left;
+}
+.mSide .formContent {
+    margin: 0;
+    padding: 0;
+    height: auto;
+    width: 100%;
+    background-color: #928c8e;
+    float: left;
+}
+.foDiv1, .foDiv2 {
+    float: left;
+    height: auto;
+    width: 49.5%;
+    margin: 0px;
+    /*padding: 0;*/
+}
+form label{
+    padding: 20px;
+    font-size:20px;
+    display:inline!important;
+}
+input, textarea, select{
+    border-radius: 5px;
+}
+form input {
+    margin-left: 20px;
+    height: 30px;
+    font-size: 16px;
+    width: 64%;
+}
+form textarea {
+    margin-left: 20px;
+    height: 20px;
+    font-size: 16px;
+    width: 64%;
+    height: 50px;
+}
+form select {
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+#uploadImage {
+    height: 200px;
+    width: 200px;
+    margin: 5px 20px;
+    padding: 0;
+    border: 1px solid black;
+}
+#btnSubmit {
+    margin-bottom:15px;
+    padding: 5px 30px;
+    font-size: medium;
+    background-color: #808080;
+    border-radius: 5px;
+    font-size: 20px;
+}
+#gridView {
+    height: auto;
+    width: 100%;
+    background-color: gray;
+}
+table, th, td{
+    border: 2px solid gray!important;
+}
+th{
+    font-size: 16px;
+    text-align: center!important;
+    background-color:lavender;
+}
+td{
+	background-color:lightgray;
+	font-size: 12px;
+}
+.displayImg img {
+    width: 80px;
+}
+.edit {
+    display: block;
+    text-align: center;
+    font-size: 23px;
+    color: #5bb95b;
+}
+.delete {
+    display: block;
+    text-align: center;
+    font-size: 23px;
+    color: #d9534f;
+}
+footer {
+    text-align: center;
+    background-color: #b7a69d;
+    padding: 0px;
+    font-weight: bold;
+}
